@@ -4,11 +4,14 @@ public class EmailConstants {
 
     public static final String SIMPLE_MAIL_TRANSFER_PROTOCOL = "smtps";
 
-    public static final String USERNAME = "aleksandarhardi1@gmail.com";
+    @Value("${SMTP_USERNAME}")
+    public static final String USERNAME;
 
-    public static final String PASSWORD = "xaziwycyjcjimqpn";
+    @Value("${SMTP_PASSWORD}")
+    public static final String PASSWORD;
 
-    public static final String FROM_EMAIL = "support@getarrays.com";
+    @Value("${SMTP_MAIL}")
+    public static final String FROM_EMAIL;
 
     public static final String CC_EMAIL = "";
 
